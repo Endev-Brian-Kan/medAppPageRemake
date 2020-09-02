@@ -82,11 +82,24 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        // margin: EdgeInsets.only(
+                        //     left: 30, top: 100, right: 30, bottom: 50),
+                        height: 100,
+                        width: double.infinity,
                         decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10)),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black,
-                              blurRadius: 20.0,
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset:
+                                  Offset(0, 3), // changes position of shadow
                             ),
                           ],
                         ),
@@ -112,6 +125,27 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        // margin: EdgeInsets.only(
+                        //     left: 30, top: 100, right: 30, bottom: 50),
+                        height: 100,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10)),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset:
+                                  Offset(0, 3), // changes position of shadow
+                            ),
+                          ],
+                        ),
                         child: Column(
                           children: <Widget>[
                             Text(
@@ -123,7 +157,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              "Melanocytic Nevi: a benign...",
+                              "Melanocytic Nevi: a benign lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                               style: TextStyle(
                                 fontSize: 12,
                                 color: Colors.lightBlue[900],
