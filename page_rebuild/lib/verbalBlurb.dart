@@ -7,6 +7,14 @@ import 'package:flutter/material.dart';
 class Blurb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text(
+        "Hi there, you might want to seek professional medical opinion.",
+        style: TextStyle(
+          fontSize: 15,
+          color: Colors.lightBlue[900],
+        ),
+      ),
+    );
   }
 }

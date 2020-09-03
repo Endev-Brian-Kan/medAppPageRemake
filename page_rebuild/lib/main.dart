@@ -73,13 +73,9 @@ class MyApp extends StatelessWidget {
                             ),
                             color: Colors.teal[200],
                           ),
-                          Text(
-                            "Hi there, you might want to seek professional medical opinion.",
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.lightBlue[900],
-                            ),
-                          ),
+
+                          // Execute "verbalBlurb.dart" here.
+                          
                         ],
                       ),
                       Column(
@@ -94,6 +90,7 @@ class MyApp extends StatelessWidget {
                             ),
                             textAlign: TextAlign.left,
                           ),
+                          // Execute "analysis.dart" here.
                           Text(
                             "Summary:",
                             style: TextStyle(
@@ -102,6 +99,7 @@ class MyApp extends StatelessWidget {
                               color: Colors.lightBlue[900],
                             ),
                           ),
+                          // Execute "summary.dart" here.
                         ],
                       ),
                     ],
