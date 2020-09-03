@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 // Benign Keratosis
 // Dermatofibroma
 
-class Summary extends StatelessWidget {
+class Analysis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,24 +25,18 @@ class Summary extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
-            offset: Offset(0, 3), // changes position of shadow
+            // changes position of shadow
+            offset: Offset(0, 3),
           ),
         ],
       ),
       child: Column(
         children: <Widget>[
+          Text("<Insert Blue Bar Graphic>"),
           Text(
-            "Melanocytic Nevi",
+            "Melanocytic Nevi 100.0%",
             style: TextStyle(
               fontSize: 15,
-              fontWeight: FontWeight.bold,
-              color: Colors.lightBlue[900],
-            ),
-          ),
-          Text(
-            "Melanocytic Nevi: a benign lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            style: TextStyle(
-              fontSize: 12,
               color: Colors.lightBlue[900],
             ),
           ),
