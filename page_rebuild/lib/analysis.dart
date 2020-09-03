@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
-// Melanocytic Nevi
-// Melanoma
-// Benign Keratosis
-// Dermatofibroma
+var diseaseName = [
+  "Melanoma",
+  "Melanocytic Nevi",
+  "Benign Keratosis",
+  "Basal Cell Carcinoma",
+  "Actinic Keratoses",
+  "Vascular Lesions",
+  "Dermatofibroma",
+  "Squamous Cell Carcinoma",
+];
 
 class Analysis extends StatelessWidget {
   @override

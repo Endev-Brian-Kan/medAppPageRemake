@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-// Hi there, you might want to seek professional medical opinion.
-// Hi there, you seem to be alright but just to play it safe, please check back in a week.
-// Hi there, everything seems fine.
+var advice = [
+  'Hi there, you might want to seek professional medical opinion.',
+  'Hi there, you seem to be alright but just to play it safe, please check back in a week.',
+  'Hi there, everything seems fine.',
+];
 
 class Blurb extends StatelessWidget {
   @override
