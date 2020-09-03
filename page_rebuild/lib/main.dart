@@ -90,7 +90,9 @@ class MyApp extends StatelessWidget {
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                               color: Colors.lightBlue[900],
+                              backgroundColor: Colors.red,
                             ),
+                            textAlign: TextAlign.left,
                           ),
                           Container(
                             // margin: EdgeInsets.only(
