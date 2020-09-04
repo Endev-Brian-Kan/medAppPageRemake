@@ -48,7 +48,11 @@ class MyApp extends StatelessWidget {
               color: Colors.teal[100],
               child: Container(
                 height: 440,
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: EdgeInsets.only(
+                  left: 30,
+                  right: 30,
+                  top: 15,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -65,15 +69,22 @@ class MyApp extends StatelessWidget {
                         color: Colors.lightBlue[900],
                       ),
                     ),
-                    ButtonTheme(
-                      minWidth: 20,
+                    Container(
+                      // constraints: BoxConstraints(minWidth: 100, maxWidth: 200),
+                      padding: EdgeInsets.symmetric(horizontal: 50),
+                      margin: EdgeInsets.symmetric(vertical: 10),
                       child: RaisedButton(
-                        child: Text("Update Profile"),
+                        child: Text(
+                          "Update Profile",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: Colors.teal[200],
                         onPressed: () {},
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50),
                         ),
-                        color: Colors.teal[200],
                       ),
                     ),
                     // Execute "verbalBlurb.dart" here.
