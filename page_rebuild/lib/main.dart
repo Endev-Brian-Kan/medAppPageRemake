@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:page_rebuild/analysis.dart';
+import 'package:page_rebuild/summary.dart';
+import 'package:page_rebuild/verbalBlurb.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,10 +13,11 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 150,
+              // width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                    "../page_rebuild/resources/headerBackground.jpg",
+                    "resources/headerBackground.jpg",
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -73,9 +77,8 @@ class MyApp extends StatelessWidget {
                             ),
                             color: Colors.teal[200],
                           ),
-
                           // Execute "verbalBlurb.dart" here.
-                          
+                          Blurb(),
                         ],
                       ),
                       Column(
@@ -91,6 +94,7 @@ class MyApp extends StatelessWidget {
                             textAlign: TextAlign.left,
                           ),
                           // Execute "analysis.dart" here.
+                          Analysis(),
                           Text(
                             "Summary:",
                             style: TextStyle(
@@ -100,6 +104,7 @@ class MyApp extends StatelessWidget {
                             ),
                           ),
                           // Execute "summary.dart" here.
+                          Summary(),
                         ],
                       ),
                     ],

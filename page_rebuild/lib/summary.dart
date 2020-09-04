@@ -26,8 +26,6 @@ class Summary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // margin: EdgeInsets.only(
-      //     left: 30, top: 100, right: 30, bottom: 50),
       height: 100,
       width: double.infinity,
       decoration: BoxDecoration(
