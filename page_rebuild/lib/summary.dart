@@ -26,8 +26,10 @@ class Summary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 120,
       width: double.infinity,
+      margin: EdgeInsets.all(15),
+      padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
@@ -46,12 +48,15 @@ class Summary extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          Text(
-            "Melanocytic Nevi",
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.bold,
-              color: Colors.lightBlue[900],
+          Container(
+            margin: EdgeInsets.all(5),
+            child: Text(
+              "Melanocytic Nevi",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+                color: Colors.lightBlue[900],
+              ),
             ),
           ),
           Text(

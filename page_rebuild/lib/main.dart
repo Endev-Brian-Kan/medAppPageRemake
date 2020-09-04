@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
               color: Colors.teal[100],
               child: Container(
                 height: 440,
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.symmetric(horizontal: 30),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -65,13 +65,16 @@ class MyApp extends StatelessWidget {
                         color: Colors.lightBlue[900],
                       ),
                     ),
-                    RaisedButton(
-                      child: Text("Update Profile"),
-                      onPressed: () {},
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50),
+                    ButtonTheme(
+                      minWidth: 20,
+                      child: RaisedButton(
+                        child: Text("Update Profile"),
+                        onPressed: () {},
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        color: Colors.teal[200],
                       ),
-                      color: Colors.teal[200],
                     ),
                     // Execute "verbalBlurb.dart" here.
                     Blurb(),
@@ -97,6 +100,17 @@ class MyApp extends StatelessWidget {
                     ),
                     // Execute "summary.dart" here.
                     Summary(),
+
+                    // Container(
+                    //   child: ConstrainedBox(
+                    //     constraints: BoxConstraints.expand(),
+                    //     child: FlatButton(
+                    //       onPressed: null,
+                    //       padding: EdgeInsets.all(0.0),
+                    //       child: Image.asset('resources/homeIcon.png'),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

@@ -20,10 +20,10 @@ class Analysis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // margin: EdgeInsets.only(
-      //     left: 30, top: 100, right: 30, bottom: 50),
       height: 100,
       width: double.infinity,
+      margin: EdgeInsets.all(15),
+      padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
