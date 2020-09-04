@@ -70,7 +70,6 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      // constraints: BoxConstraints(minWidth: 100, maxWidth: 200),
                       padding: EdgeInsets.symmetric(horizontal: 50),
                       margin: EdgeInsets.symmetric(vertical: 10),
                       child: RaisedButton(
@@ -90,14 +89,17 @@ class MyApp extends StatelessWidget {
                     // Execute "verbalBlurb.dart" here.
                     Blurb(),
 
-                    Text(
-                      "Analysis Results",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.lightBlue[900],
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      child: Text(
+                        "Analysis Results",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.lightBlue[900],
+                        ),
+                        textAlign: TextAlign.left,
                       ),
-                      textAlign: TextAlign.left,
                     ),
                     // Execute "analysis.dart" here.
                     Analysis(),
