@@ -11,6 +11,8 @@ var diseaseName = [
   "Squamous Cell Carcinoma",
 ];
 
+var result = diseaseName[0];
+
 class Analysis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,8 @@ class Analysis extends StatelessWidget {
         children: <Widget>[
           Text("<Insert Blue Bar Graphic>"),
           Text(
-            "Melanocytic Nevi 100.0%",
+            // "Melanocytic Nevi 100.0%",
+            "$result 100%",
             style: TextStyle(
               fontSize: 15,
               color: Colors.lightBlue[900],

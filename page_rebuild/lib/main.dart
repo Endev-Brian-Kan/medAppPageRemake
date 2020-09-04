@@ -57,59 +57,59 @@ class MyApp extends StatelessWidget {
                     topRight: const Radius.circular(20.0),
                   ),
                 ),
-                child: Expanded(
-                  child: ListView(
-                    children: <Widget>[
-                      Column(
-                        children: [
-                          Text(
-                            "If you would like to be connected to a physician, please give us the following information (for billing purposes)",
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.lightBlue[900],
-                            ),
+                // child: Expanded(
+                child: ListView(
+                  children: <Widget>[
+                    Column(
+                      children: [
+                        Text(
+                          "If you would like to be connected to a physician, please give us the following information (for billing purposes)",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.lightBlue[900],
                           ),
-                          RaisedButton(
-                            child: Text("Update Profile"),
-                            onPressed: () {},
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                            color: Colors.teal[200],
+                        ),
+                        RaisedButton(
+                          child: Text("Update Profile"),
+                          onPressed: () {},
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
                           ),
-                          // Execute "verbalBlurb.dart" here.
-                          Blurb(),
-                        ],
-                      ),
-                      Column(
-                        children: <Widget>[
-                          Text(
-                            "Analysis Results",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.lightBlue[900],
-                              backgroundColor: Colors.red,
-                            ),
-                            textAlign: TextAlign.left,
+                          color: Colors.teal[200],
+                        ),
+                        // Execute "verbalBlurb.dart" here.
+                        Blurb(),
+                      ],
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          "Analysis Results",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.lightBlue[900],
+                            backgroundColor: Colors.red,
                           ),
-                          // Execute "analysis.dart" here.
-                          Analysis(),
-                          Text(
-                            "Summary:",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.lightBlue[900],
-                            ),
+                          textAlign: TextAlign.left,
+                        ),
+                        // Execute "analysis.dart" here.
+                        Analysis(),
+                        Text(
+                          "Summary:",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.lightBlue[900],
                           ),
-                          // Execute "summary.dart" here.
-                          Summary(),
-                        ],
-                      ),
-                    ],
-                  ),
+                        ),
+                        // Execute "summary.dart" here.
+                        Summary(),
+                      ],
+                    ),
+                  ],
                 ),
+                // ),
               ),
             ),
             //       ),
