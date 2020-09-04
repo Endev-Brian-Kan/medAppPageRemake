@@ -13,6 +13,9 @@ var diseaseName = [
 
 var result = diseaseName[0];
 
+// Ideally this would be pulled from a data set somewhere.
+String probability = "100%";
+
 class Analysis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +45,6 @@ class Analysis extends StatelessWidget {
         children: <Widget>[
           Text("<Insert Blue Bar Graphic>"),
           Text(
-            // "Melanocytic Nevi 100.0%",
             "$result 100%",
             style: TextStyle(
               fontSize: 15,
