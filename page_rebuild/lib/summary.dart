@@ -26,7 +26,7 @@ class Summary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 300,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
