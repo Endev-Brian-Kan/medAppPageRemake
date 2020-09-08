@@ -113,17 +113,6 @@ class MyApp extends StatelessWidget {
                     ),
                     // Execute "summary.dart" here.
                     Summary(),
-
-                    // Container(
-                    //   child: ConstrainedBox(
-                    //     constraints: BoxConstraints.expand(),
-                    //     child: FlatButton(
-                    //       onPressed: null,
-                    //       padding: EdgeInsets.all(0.0),
-                    //       child: Image.asset('resources/homeIcon.png'),
-                    //     ),
-                    //   ),
-                    // ),
                   ],
                 ),
               ),
