@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:page_rebuild/analysis.dart';
 import 'package:page_rebuild/summary.dart';
 import 'package:page_rebuild/verbalBlurb.dart';
+import 'package:page_rebuild/chart.dart';
 
 void main() => runApp(MyApp());
 

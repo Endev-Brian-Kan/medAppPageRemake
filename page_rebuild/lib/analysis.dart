@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:charts_flutter/flutter.dart' as charts;
+import './chart.dart';
 
 var diseaseName = [
   "Melanoma",
@@ -13,6 +15,25 @@ var diseaseName = [
 
 var result = diseaseName[0];
 
+List<charts.Series<LinearSales, int>> createSampleData() {
+  final data = [
+    new LinearSales(0, 100),
+    new LinearSales(1, 75),
+    new LinearSales(2, 25),
+    new LinearSales(3, 5),
+    new LinearSales(6, 25)
+  ];
+
+  return [
+    new charts.Series<LinearSales, int>(
+      id: 'Sales',
+      domainFn: (LinearSales sales, _) => sales.year,
+      measureFn: (LinearSales sales, _) => sales.sales,
+      data: data,
+    )
+  ];
+}
+
 // Ideally this would be pulled from a data set somewhere.
 String probability = "100%";
 
@@ -20,7 +41,7 @@ class Analysis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 200,
       width: double.infinity,
       margin: EdgeInsets.all(15),
       padding: EdgeInsets.all(15),
@@ -43,7 +64,14 @@ class Analysis extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          Text("<Insert Blue Bar Graphic>"),
+          Container(
+            height: 150,
+            child: DonutPieChart(
+              createSampleData(),
+              // Disable animations for image tests.
+              animate: false,
+            ),
+          ),
           Text(
             "$result 100%",
             style: TextStyle(
